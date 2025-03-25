@@ -1,0 +1,81 @@
+<div class="pb-4 text-center">
+	<div class="fs-3 fw-bold">Me contacter</div>
+	<div class="text-secondary">Get in touch</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-md-6 my-4 justify-content-between">
+		<div class="card mb-4 border-0 shadow">
+			<div class="card-body">
+				<h5 class="card-title text-center">{{ ux_icon('streamline:send-email-solid') }}</h5>
+				<h6 class="card-subtitle mb-4 text-body-secondary text-center">Envoie-moi un mail !</h6>
+
+
+				<div class="text-center">
+					<button class="btn btn-link" id="copy_btn_mail">
+						{{ ux_icon('streamline:copy-paste', {'id': 'copy_btn_svg_mail'}) }}
+						adrien.florio@gmail.com
+					</button>
+					<span id="copied_text_mail" class="lvl-medium fst-italic d-none">Copié !</span>
+				</div>
+
+				<p class="text-center small-secondary">ou</p>
+
+				<div class="text-center">
+					<a href="mailto:adrien.florio@gmail.com" target="_blank">
+						{{ ux_icon('mdi:email-fast-outline') }}
+						Par ici !
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card border-0 shadow">
+			<div class="card-body">
+				<h5 class="card-title text-center">{{ ux_icon('mingcute:whatsapp-fill') }}</h5>
+				<h6 class="card-subtitle mb-4 text-body-secondary text-center">Ou un SMS !</h6>
+
+				<div class="text-center">
+					<button class="btn btn-link" id="copy_btn_sms">
+						{{ ux_icon('streamline:copy-paste', {'id': 'copy_btn_svg_sms'}) }}
+						+336 70 38 33 50
+					</button>
+					<span id="copied_text_sms" class="lvl-medium fst-italic d-none">Copié !</span>
+				</div>
+
+				<p class="text-center small-secondary">ou</p>
+
+				<div class="text-center">
+					<a href="https://api.whatsapp.com/send?phone=330670383350&text=Hello" target="_blank">
+						{{ ux_icon('material-symbols:sms-outline-rounded') }}
+						Par ici !
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	{# <div class="col-md-6">
+						{{ form_start(form) }}
+						{{ form_errors(form) }}
+			
+						<div class="mb-3">
+							<label class="form-label">{{ form_label(form.name) }}</label>
+							{{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+						</div>
+			
+						<div class="mb-3">
+							<label class="form-label">{{ form_label(form.email) }}</label>
+							{{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+						</div>
+			
+						<div class="mb-3">
+							<label class="form-label">{{ form_label(form.content) }}</label>
+							{{ form_widget(form.content, {'attr': {'class': 'form-control'}}) }}
+						</div>
+			
+						<button type="submit" class="btn btn-primary mb-3">M'envoyer un message</button>
+			
+						{{ form_end(form) }}
+					</div> #}
+</div>

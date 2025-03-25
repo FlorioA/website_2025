@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Adrien Florio
+{% endblock %}
+
+{% block body %}
+	<div class="component-wrapper">
+		<div class="py-5"></div>
+
+		{% include 'components/presentation.html.twig' %}
+
+		{% include 'components/fill_squares_game.html.twig' %}
+
+		<div class="py-5"></div>
+
+		{% include 'components/about_me.html.twig' %}
+
+		<div class="py-5"></div>
+
+		{% include 'components/skills.html.twig' %}
+
+		<div class="py-5"></div>
+
+		{% include 'components/experiences.html.twig' %}
+
+		<div class="py-5"></div>
+
+		{% include 'components/contact.html.twig' %}
+
+		<div class="py-5"></div>
+	</div>
+
+	<div id="main_separator" class="d-flex justify-content-center">
+		<div class="out_links_container align-self-center">
+			<div id="made_by" class="text-center mb-4">Fait par Adrien F</div>
+			<div>
+				<a class="btn btn-link" href="https://www.linkedin.com/in/adrienflorio/" target="_blank">{{ ux_icon('mingcute:linkedin-fill') }}</a>
+				<a class="btn btn-link" href="https://github.com/FlorioA" target="_blank">{{ ux_icon('akar-icons:github-fill') }}</a>
+				<a class="btn btn-link" href="#top">{{ ux_icon('academicons:cv-square') }}</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

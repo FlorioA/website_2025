@@ -1,0 +1,255 @@
+/* GLOBAL */
+html,
+body {
+    background-color: #d0ebf8;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #5b2333;
+}
+
+.component-wrapper {
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%;
+}
+
+svg {
+    height: 32px;
+    width: 32px;
+    color: #326273;
+}
+
+#skills svg {
+    margin-top: 7.25px;
+}
+
+.checklist svg {
+    height: 16px;
+    width: 16px;
+}
+
+.checklist {
+    color: #326273;
+}
+
+.introlist svg {
+    height: 24px;
+    width: 24px;
+}
+
+.card {
+    border-radius: 20px;
+    color: #5b2333 !important;
+}
+
+.card.no-web {
+    background-color: #f1fbff;
+}
+
+.modal-content {
+    border-radius: 20px;
+    font-size: medium;
+}
+
+.modal-header {
+    border: none
+}
+
+.small-secondary {
+    font-size: medium;
+    color: #9e969a;
+}
+
+/* a {
+    text-decoration: none;
+    color: #5b2333;
+}
+
+a:hover {
+    color: #7c3549;
+} */
+
+
+/* ANIMATION */
+#hello_tag {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+
+/* BUTTONS */
+.btn,
+.nav-link {
+    border-radius: 24px !important;
+}
+
+.btn-primary {
+    background-color: #5b2333 !important;
+    border-color: #5b2333 !important;
+}
+
+.btn-primary:hover {
+    background-color: #7c3549 !important;
+    border-color: #7c3549 !important;
+}
+
+.btn-outline-primary {
+    color: #5b2333 !important;
+    border-color: #5b2333 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #5b2333 !important;
+    border-color: #5b2333 !important;
+    color: #fff !important;
+}
+
+.text-secondary {
+    color: #866b73 !important;
+}
+
+.nav-link {
+    color: #5b2333 !important;
+    border: 1px solid #5b2333 !important;
+}
+
+.nav-link:hover {
+    background-color: #7c3549 !important;
+    border-color: #7c3549 !important;
+    color: #fff !important;
+}
+
+.nav-link.active {
+    background-color: #5b2333 !important;
+    color: #fff !important;
+}
+
+.btn-link,
+a {
+    color: #326273;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+a:hover {
+    color: #5194a0;
+}
+
+
+
+
+
+/* Niveaux */
+[class^='lvl-'] {
+    font-size: small;
+}
+
+
+.lvl-basics {
+    color: #9e969a !important;
+}
+
+.lvl-medium {
+    color: #8d687a !important;
+}
+
+.lvl-advanced {
+    color: #803a5c !important;
+}
+
+
+/* Jeu Squares */
+.square {
+    height: 16px;
+    width: 16px;
+    border: 2px solid #5b2333;
+    border-radius: 12px;
+}
+
+.square:hover {
+    border-color: #a84e9c;
+    background-color: #a84e9c;
+}
+
+.line {
+    display: auto;
+    margin-top: 8px;
+    width: 144px;
+    border: 1px solid #5b2333;
+}
+
+#score_display {
+    font-size: small;
+    color: #9e969a;
+    display: none;
+}
+
+/**/
+#main_separator {
+    border-radius: 50% 70% 0% 0%;
+    height: 400px;
+    background-color: #5b2333;
+    box-shadow: 0px 20px 10px #381429 inset;
+}
+
+p {
+    font-size: medium;
+}
+
+
+/* IMAGE */
+#img_pres_container img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 180px 180px 30px 30px;
+    border: solid 20px #326273;
+}
+
+.out_links_container a {
+    transition-property: transform;
+    transition-duration: 1;
+    transition-delay: 0;
+}
+
+.out_links_container a:hover {
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+}
+
+
+
+#main_separator svg {
+    color: #d0ebf8;
+}
+
+#made_by {
+    color: #326273;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+
+@media(max-width: 992px) {
+    .line {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    img {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 482px) {
+    .square {
+        display: none;
+    }
+
+    #score_display {
+        display: none;
+    }
+}
